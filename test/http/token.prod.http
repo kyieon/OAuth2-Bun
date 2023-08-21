@@ -1,0 +1,58 @@
+### 1.1 client_credentials (Basic)
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=ucs-auth
+&client_secret=533a32096da1209badac716538604dd2
+
+
+### 1.2 client_credentials (Base64)
+
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic dWNzLWF1dGg6NTMzYTMyMDk2ZGExMjA5YmFkYWM3MTY1Mzg2MDRkZDI=
+
+grant_type=client_credentials
+
+
+### 2.1 password (Basic)
+
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password
+&client_id=ucs-auth
+&client_secret=533a32096da1209badac716538604dd2
+&username=ucsadmin
+&password=D4nPH9rFBSg%2B5QbtPi46ZFYKZUMaH1W4MVqP%2FSaZvTeEeYJ6GJiMc6pNdlnzFBN6ZSr9Qite%2ByJKf%2Fpqa8LRZw%3D%3D
+
+### 2.2 password (Base64)
+
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic dWNzLWF1dGg6NTMzYTMyMDk2ZGExMjA5YmFkYWM3MTY1Mzg2MDRkZDI=
+
+grant_type=password
+&username=ucsadmin
+&password=D4nPH9rFBSg+5QbtPi46ZFYKZUMaH1W4MVqP/SaZvTeEeYJ6GJiMc6pNdlnzFBN6ZSr9Qite+yJKf/pqa8LRZw==
+
+
+### 3.1 refresh (Basic)
+
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=refresh_token
+&client_id=ucs-auth
+&client_secret=533a32096da1209badac716538604dd2
+&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVjc2FkbWluIiwiaWF0IjoxNjkyNjAyMTI5LCJleHAiOjE2OTMyMDY5Mjl9.MjvR1vS479HZBJi1qR7g5FPDgSNfVaxs3l4MEw1oDl0
+
+### 3.2 refresh (Base64)
+
+POST http://43.202.76.8:5010/auth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic dWNzLWF1dGg6NTMzYTMyMDk2ZGExMjA5YmFkYWM3MTY1Mzg2MDRkZDI=
+
+grant_type=refresh_token
+&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVjc2FkbWluIiwiaWF0IjoxNjkyNjAyMTI5LCJleHAiOjE2OTMyMDY5Mjl9.MjvR1vS479HZBJi1qR7g5FPDgSNfVaxs3l4MEw1oDl0

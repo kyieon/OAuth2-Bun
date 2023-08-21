@@ -1,0 +1,11 @@
+### client_credentials
+
+POST http://43.202.76.8:5010/auth/validate HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTI2MDUwMzEsImV4cCI6MTY5MjYwODYzMX0.RWNAS_Cw45foQQta2vyeRKWs-OrROrYKZig2M5U9TH4
+
+### password
+
+POST http://43.202.76.8:5010/auth/validate HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVjc2FkbWluIiwiaWF0IjoxNjkyNjA3NzM4LCJleHAiOjE2OTI2MTEzMzh9._O8Qdk1S5SHlxM8T4yR3PaoPoEG_vk5HBsQaqavTm-U

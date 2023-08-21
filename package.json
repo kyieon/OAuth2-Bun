@@ -1,0 +1,26 @@
+{
+  "name": "oauth",
+  "module": "index.ts",
+  "devDependencies": {
+    "bun-types": "^0.7.1",
+    "ts-node": "^10.9.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development bun --watch src/index.ts",
+    "start": "cross-env NODE_ENV=production bun run dist/index.js",
+    "build": "bun build ./src/index.ts --outdir=dist --sourcemap=external --target=bun"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/oauth2-server": "^3.0.13",
+    "@types/pg": "^8.10.2",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "fast-jwt": "^3.1.1",
+    "oauth2-server": "^3.1.1",
+    "pg": "^8.11.2"
+  }
+}

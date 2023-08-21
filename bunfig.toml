@@ -1,0 +1,31 @@
+# scripts to run before `bun run`ning a file or script
+# useful for registering plugins
+# preload = ["./preload.ts"]
+
+# Reduce memory usage at the cost of performance
+smol = true
+
+# Set Bun's log level
+logLevel = "debug" # "debug", "warn", "error"
+
+[debug]
+# When navigating to a blob: or src: link, open the file in your editor
+# If not, it tries $EDITOR or $VISUAL
+# If that still fails, it will try Visual Studio Code, then Sublime Text, then a few others
+# This is used by Bun.openInEditor()
+editor = "code"
+
+[test]
+# Reduce memory usage at the cost of performance
+smol = true
+
+[install.lockfile]
+
+# path to read bun.lockb from
+path = "bun.lockb"
+
+# path to save bun.lockb to
+savePath = "bun.lockb"
+
+# whether to save the lockfile to disk
+save = true

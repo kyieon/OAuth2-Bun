@@ -1,0 +1,11 @@
+### client_credentials
+
+POST http://localhost:5010/auth/validate HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTI2Mjc5ODgsImV4cCI6MTY5MjYzMTU4OH0.jCMznr3zFV71VvoqKrKhlkTr8_lo2RB-21IhfjzgYrc
+
+### password
+
+POST http://localhost:5010/auth/validate HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVjc2FkbWluIiwiaWF0IjoxNjkyNjI4MDM2LCJleHAiOjE2OTI2MzE2MzZ9.dzPl5g5-jpzG5NjzbVBHJmjO6VRxBSvgKR2rBZ8erqA
