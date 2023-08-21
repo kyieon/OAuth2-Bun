@@ -1,12 +1,15 @@
 
 # OAuth2.0 - Using Bun (v0.7.1)
 
++ bun install
++ npm run build & npm run start 
++ npm run dev
 
-```
-Auth 모듈 API 연동 규약서 입니다.
-```
-OAuth 2.0 Authorization Framework
-> (https://datatracker.ietf.org/doc/html/rfc6749/)
+---
+
+ Auth 모듈 API 연동 규약서 입니다.
+
+> OAuth 2.0 Authorization Framework (https://datatracker.ietf.org/doc/html/rfc6749/)
 
 ---
 
